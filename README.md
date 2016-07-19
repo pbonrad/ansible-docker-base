@@ -7,8 +7,8 @@ Main use case for me was testing of my created Ansible roles on different distri
 
 Usage
 -----
-    docker run -td --privileged --name [name] pbonrad/ansible-docker-base:debian-7 /sbin/init
+    docker run -td --privileged --name [name] pbonrad/ansible-docker-base:debian-7
 
-Always start the container with `--privileged` and call `/sbin/init`. Otherwise systemd is not working correctly and you are not able to install any services.
+Always start the container with `--privileged`, otherwise systemd is not working correctly and you are not able to install any services.
 
 Please use `[name] ansible_connection=docker` in Ansible playbook (host) to connect to the running docker container.

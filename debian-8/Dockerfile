@@ -5,8 +5,10 @@
 
 FROM debian:jessie
 
-MAINTAINER Peter Bonrad
+MAINTAINER Peter Bonrad <peter@bonrad.org>
 
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get -qq update && \
     apt-get install -y python sudo apt-transport-https apt-utils
+
+CMD ["/sbin/init"]
