@@ -12,3 +12,7 @@ Usage
 Always start the container with `--privileged`, otherwise systemd is not working correctly and you are not able to install any services.
 
 Please use `[name] ansible_connection=docker` in Ansible playbook (host) to connect to the running docker container.
+
+License
+-------
+MIT
